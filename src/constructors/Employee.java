@@ -15,10 +15,20 @@ public class Employee {
         salary = 10000;
     }
 
-    public Employee(String name, String jobTitle, int ID, double salary) {
-        this.name = name;
+    public Employee(String n, String jobTitle, int ID, double salary) {
+        name = n;
         this.jobTitle = jobTitle;
         this.ID = ID;
         this.salary = salary;
+    }
+
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", ID=" + ID +
+                ", salary= $" + salary +
+                ", company name=" + companyName +
+                '}';
     }
 }
